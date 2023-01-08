@@ -1,0 +1,176 @@
+<!--must start every website with this doctype declaration-->
+<!DOCTYPE html>
+
+<!-- what is in the head tag is not shown on the website-->
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <!--what shows on the tab; the title of your website-->
+    <title> 
+      Aasri's Cool Website
+    </title>
+    <!-- this is linking the css stylesheet-->
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <!-- body tag is what you want to actually show up on your website-->
+  <body>
+    <div id="container">
+    <!-- divs are how you group items in HTML-->
+    <!-- by creating a container class, you are able to control everything that is on your website-->
+    <div class = "container">
+        <!-- this div is going to hold all of the elements of the header of the website-->
+        <div class = "header">
+            <!-- this is controlling the left side of the header-->
+            <div class = "left-header">
+                <div class = "header-link">
+                    <a href = "index.html"> Home</a>
+                </div>
+                
+                <div class = "header-link">
+                    <a href = "https://aasri.ghost.io/" target="blank"> Blog </a>
+                </div>
+                
+            <!-- end left-header -->
+            </div>
+
+            <!-- this is controlling the right side of the header-->
+            <div class = "right-header">
+                <div class = "name-plate">
+                    <div> Aasritha Sanikommu </div>
+                </div>
+            <!-- end right-header -->
+            </div>
+
+        <!-- end header -->
+        </div>
+            <div class = "stars"></div>
+            <div class = twinkling></div>
+            <div class = "clouds"></div>
+
+        <div class = "middle">
+            
+            
+                <div class = "middle-text">
+                    <div class = "welcome-message">
+                        <div class = "image">
+                            <img src="face.jpeg" alt="ME" style="height: 200px; border-radius: 15%;">
+                        </div>
+
+
+                        <p>
+                            Hi, my name is Aasritha Sanikommu!
+                            <br>
+                            I am currently a student at the 
+                            <a href = "https://www.cs.umd.edu/" target= blank , style = "text-decoration: none; color: cornflowerblue; ">University of Maryland.</a>
+                            
+                            Outside of my classwork, <br>I work at the 
+                            
+                            <a href = "https://www.cs.umd.edu/staff" target= blank , style = "text-decoration: none; color: cornflowerblue; ">CS department</a>
+                            and am on the board of the 
+                            <a href = "https://www.instagram.com/umdbits/?hl=en" target= blank , style = "text-decoration: none; color: cornflowerblue; ">Business and IT Society</a>
+                            .<br>
+                            To take a look at my previous experience, check out my 
+                            <a href = "https://www.linkedin.com/in/aasritha-sanikommu-4737b3217/" target= blank , style = "text-decoration: none; color: cornflowerblue; ">LinkedIn</a>
+                             or go to my <br>
+                             <a href = "https://github.com/aasri-s" target= blank , style = "text-decoration: none; color: cornflowerblue; ">GitHub</a> 
+                             to check out some of the projects I have worked on. 
+                            <br> 
+                            <br>
+                            <br>
+                            In my free time, I love listening to music and podcasts. 
+                            My favorite podcasts are 
+                            <a href = "https://hubermanlab.com/" target= blank , style = "text-decoration: none; color: cornflowerblue; ">Huberman Lab</a>,
+                        <br>
+                            <a href = "https://www.youtube.com/channel/UCESLZhusAkFfsNsApnjF_Cg" target= blank , style = "text-decoration: none; color: cornflowerblue; ">All-in</a>
+                            , and during the 
+                            <a href = "https://www.youtube.com/watch?v=PVgOS__o9Bg" target= blank , style = "text-decoration: none; color: cornflowerblue; ">World Cup</a>
+                            , 
+                            <a href = "https://podcasts.apple.com/us/podcast/after-the-whistle-with-brendan-hunt-and-rebecca-lowe/id1654074926" target= blank , style = "text-decoration: none; color: cornflowerblue; ">After the Whistle</a>
+                            (...patiently waiting for 2026).<br> While I worked on this website, I listened to 
+                            <a href = "https://open.spotify.com/album/07w0rG5TETcyihsEIZR3qG?si=bmpoIQvjRY-V3ldeHpMaAQ" target= blank , style = "text-decoration: none; color: cornflowerblue; ">SZA</a>
+                            . 
+                            I also started a 
+                            <a href = "https://aasri.ghost.io/" target= blank , style = "text-decoration: none; color: cornflowerblue; ">blog</a>
+                            !<br> Check out the 
+                            <a href = "https://aasri.ghost.io/making-my-first-website/" target= blank , style = "text-decoration: none; color: cornflowerblue; ">blog post</a>
+                             I wrote about making this website or my 
+                             <a href = "https://aasri.ghost.io/todaysbyte/" target= blank , style = "text-decoration: none; color: cornflowerblue; ">todaysbyte</a>
+                             section. 
+                            <br>
+                            <br>
+                            Thanks for visiting! 
+
+                        </p>
+                          <button class = "first" onclick="runSomething()"> Click!</button>
+                          <script>
+                              var colorChanger = document.getElementsByTagName("button")[0];
+                                /*colorChanger.addEventListener("click",function() {*/
+                                function runSomething(){
+                                    document.querySelector('p').style.color = "purple"; 
+                                    document.querySelector('p').style.fontFamily = "Times New Roman"; 
+                                    document.querySelector('.header').style.fontFamily = "Times New Roman";
+                                    document.querySelector('.stars').style.background = "url(other.jpg)";
+                                    document.querySelector('.twinkling').style.background = "url(Empty.png)";
+                                    document.querySelector('.clouds').style.background = "url(Empty.png)";
+                                    document.querySelector('.second').style.background = "white";
+                                    document.querySelector('.second').style.border = "black";
+                                    document.querySelector('.second').style.color = "black";
+                                    document.querySelector('.first').style.color = "black";
+                                    document.querySelector('.first').style.opacity = 0;
+
+                                    
+                                };
+                                 
+                            
+                              
+                          </script>
+                         
+                         <button class = "second" onclick="goBack()"> Go Back!</button>
+                         <script>
+                            var colorChanger = document.getElementsByTagName("button")[0];
+                              /*colorChanger.addEventListener("click",function() {*/
+                              function goBack(){
+                                  document.querySelector('p').style.color = "white"; 
+                                  document.querySelector('.stars').style.background = "url(stars.png)";
+                                  document.querySelector('.twinkling').style.background = "url(twinkling.png)";
+                                  document.querySelector('.clouds').style.background = "url(clouds.png)";
+                                  document.querySelector('.second').style.background = "black";
+                                  document.querySelector('.second').style.color = "black";
+                                  document.querySelector('.first').style.background = "black";
+                                  document.querySelector('.first').style.color = "white";
+                                  document.querySelector('p').style.fontFamily = "Arial"; 
+                                  document.querySelector('.header').style.fontFamily = "Arial";
+                                  document.querySelector('.first').style.opacity = 1;
+                              };
+                               
+                          
+                            
+                        </script>
+                    </div>
+                    
+                            
+                </div>
+                
+            
+        </div>
+
+
+        <!-- going to create a middle and a footer-->
+
+    
+    <!-- end containter class -->
+    </div>
+</div>
+  </body>
+    
+
+  <!--<footer>
+    <p>
+        A Sanikommu Production.
+    </p>
+
+  </footer> --> 
+
+
+</html>
